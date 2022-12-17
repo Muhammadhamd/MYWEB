@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+
+    
+    <link rel="icon" href="/img/newlogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@1,500;1,700&family=Oswald:wght@700&family=Poppins:wght@700&family=Ubuntu+Condensed&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+ @import url("https://desktop.github.com/images/star-bg.svg");
+   *{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  color: rgba(255,255,255,0.65);
+    /* background-color: #24292e; */
+    background-color: #111;
+    background-image: url("https://desktop.github.com/images/star-b.svg"),linear-gradient(#191c20, #111 25%);
+    background-repeat: repeat-x;
+    background-position: center 0, 0 0, 0 0;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:column ;
+    animation-name: backgchange;
+    animation-duration: 20s;
+    animation-delay:5s ;
+    animation-iteration-count: infinite;
+
+}
+
+/* @keyframes backgchage {
+  0%{background-color: #24292e;}
+  10%{background-color: #24292e;}
+  20%{background-color: #24292e;}
+  30%{background-color: #24292e;}
+  50%{background-color: #1c1e26;}
+  60%{background-color: #1c1e26;}
+  70%{background-color: #1c1e26;}
+  80%{background-color: #1c1e26;}
+  100%{background-color: #24292e;}
+  
+} */
+  .main-container{
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+     max-width: 1344px;
+    width: 100%;
+
+  }
+
+  .layercontainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160vh;
+  }
+
+  .container{
+    display: flex;
+    width: 135%;
+    max-width: 881px;
+   
+    margin: 95px 0 0 0;
+}
+  .ownerimgdiv{
+    width: 200px;
+    height: 200px;
+    color:rgb(150, 148, 148);
+
+  }
+  .ownerimgdiv img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: block;
+    margin:auto;
+    border: 2px solid rgb(255, 255, 255 , 0.400);
+    animation-name: circleone;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}  
+@keyframes identifier {
+  
+}
+  .ownerimgdiv h2{
+    display: block;
+    margin: 5% 32%;
+    color: #ccc;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+}
+  .owner-info{
+    margin: 0 0 0 1%;
+    font-family: 'Ubuntu Condensed';
+    height: 500px;
+
+  }
+  .container h1{
+    color:#ccc;
+    margin: 12% 0% 0;
+    animation-name:changecolor;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+
+
+  }
+  .container .owner-info p{
+    color: #7c798b;
+  }
+  .owner-info .aboutme{
+   
+    width: 27pc;
+    line-height: 20px;
+    font-size: 16px;
+    margin: 8% 0;
+}
+  .owner-info .aboutme p{
+    color: white;
+  }
+  .aboutme h3{
+    color: #ccc;
+    font-size: 24px;
+    margin: 0 0 3% 0;
+  }
+  .aboutweb{
+    width: 27pc;
+    line-height: 20px;
+    font-size: 16px;
+    margin: 8% 0;
+  }
+  .owner-info .aboutweb h3{
+    color: #ccc;
+    font-size: 24px;
+    margin: 0 0 3% 0;
+  }
+  .owner-info .aboutweb p{
+    color: white;
+  }
+  .aboutweb a{
+    font-size: 18px;
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  
+  /* for servicess section */
+  .services-main{
+    width: 130%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    margin: 200px 0 0 50px ;
+  }
+  .services-main-box{
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .services-box-container1{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services-main-box .service-head{
+    border-bottom: 4px solid crimson;
+    width: 200px;
+    font-size: 38px;
+    margin: 25px 0;
+    padding: 0px 0 5px 22px;
+  }
+  .services-box-container1 .box{
+    font-family: 'poppins';
+    width: calc(1000px/3 - 20px);
+    height: 200px;
+    background-color: #222;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+   transition: all 0.3s ease-in ;
+   margin: 10px 20px;
+  }
+  .services-box-container1 .box:hover{
+    transform: scale(1.05);
+    
+  }
+  .services-box-container1 .box:hover{
+    background-color: crimson;
+    color: white;
+  }
+  
+
+  .box .services-box-text{
+    margin: 0 0 0 10px;
+    font-size: 13px;
+  }
+
+  .box .box-icon{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease-out;
+
+  }
+  .services-box-container1 .box:hover .box-icon{
+    color: white;
+    transition: color 0.3s ease-in;
+  }
+  .box h2{
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .container{
+      max-width: 760px;
+    }
+  }
+
+  @media screen and (max-width:740px) {
+    .container{
+      max-width: 600px;
+    }
+    .ownerimgdiv{
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    .container{
+      max-width: 500px;
+
+    }
+
+    .ownerimgdiv h2{
+    display: block;
+    color: #ccc;
+   
+    font-size: 20px;
+}
+  .owner-info{
+    margin: 0 0 0 1%;
+    
+    height: 500px;
+
+  }
+  .container h1{
+   font-size: 28px;
+
+
+  }
+  .owner-info .aboutme{
+   
+    line-height: 20px;
+    font-size: 14px;
+    margin: 8% 0;
+    width: 350px;
+}
+ .owner-info .aboutme p{
+   color: white;
+ }
+ .aboutme h3{
+   color: #ccc;
+   font-size: 21px;
+   margin: 0 0 3% 0;
+ }
+ .aboutweb{
+  width: 350px;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 8% 0;
+ }
+ .owner-info .aboutweb h3{
+   color: #ccc;
+   font-size: 21px;
+   margin: 0 0 3% 0;
+ }
+ .owner-info .aboutweb p{
+   color: white;
+ }
+ .aboutweb a{
+   font-size: 15px;
+   color: #ccc;
+   text-decoration: none;
+ }
+
+  }
+
+  @media screen and (max-width:520px) {
+    .container{
+      flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'poppis';
+    width: 300px;
+    }
+  }
+
+</style>
+<body>
+  
+    <script id="replace_with_navbar" src="nav.js"></script>
+
+    <div class="main-container">
+        <div class="layercontainer">
+          <!-- owner infomation -->
+            <div class="container">
+              
+                <div class="ownerimgdiv">
+                    <img src="./img/ownerpic1.jpg" alt="" id="ownerimg aboutme">
+                    <h2>Owner</h2>
+                </div>
+             <div class="owner-info">
+                    <h1 class="ownername">Muhammad Hamd</h1>
+                <p>Frontend web developer and game developer</p>
+                <div class="aboutme"><h3>about me</h3>
+                    <p>Aussalamualikum! My name is Muhammad Hamd Ali I am 18 years old. I am a frontend web developer and game developer. I work on fiver my fiver id is given in the end of webpage. I am studying commerce in 1st year dgree college and diploma from Ali grah institude Karachi Pakistan </p>
+                </div>
+                <div class="aboutweb">
+                    <h3>about web</h3>
+                    <p></p>
+                </div>        
+             </div>
+            
+            </div>
+            <!-- services section -->
+
+            
+              <div class="services-main-box">
+                <h2 class="service-head">Services</h2>
+                <div class="services-box-container1">
+                  <!-- first box of services section -->
+                  <div class="box">
+                
+                      <div class="box-icon">
+                        <i class="fa fa-paint-brush"></i>
+                      </div>
+                      <h2>web designing</h2>
+                      <div class="services-box-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi nobis sed.
+                      </div>
+                    
+                  </div>
+                  <!-- second box of services section -->
+                  <div class="box">
+                    
+                     
+                      <div class="box-icon">
+                        <i class="fa fa-line-chart"></i>
+                      </div>
+                      <h2>Adversment</h2>
+                      <div class="services-box-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi nobis sed.
+                      </div>
+                    
+                  </div>
+                  <!-- third box of services section -->
+
+                  
+                    <div class="box">
+                     
+                      <div class="box-icon">
+                        <i class="fa fa-code" style="font-weight:900;"></i>
+                      </div>
+                      <h2>Coding</h2>
+                      <div class="services-box-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sequi nobis sed.
+                      </div>
+                    
+                  </div>
+                </div>
+              </div>
+           
+            <script id="replace_with_footer" src="footer.js"></script>
+            <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+        </div>
+    </div>
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+
+     let options = new Typed(".aboutweb p" ,{
+      strings:["This web is for personal and technical blogs. This web is build by the owner of this web <a>Muhammad Hamd</a>. The web name is CodingPakistan . It will be publish soon here we post some technical blog posts related to different programming languages , Geb development , Game development , Android apps development and problem solving related to Computer here you can findout many post to design your webpage etc."],
+         typeSpeed: 8
+     });
+     </script>
+</body>
+</html>
